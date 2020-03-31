@@ -47,24 +47,5 @@ public class Test02 {
 		System.out.println("f1 > f2 : " + (f1 > f2));
 		System.out.println("f1 <= f2 : " + (f1 <= f2));
 		System.out.println("f1 >= f2 : " + (f1 >= f2));
-		
-		
-		//3. 대입연산자
-		// A = B : 연산의 방향이 오른쪽에서 왼쪽으로 실행
-		// + 산술연산자 : 복합 대입 연산자
-		// (+=, -=, *=, /=, %=)
-		// A += B <=> A = A + B
-		// A -= B <=> A = A - B
-		// A *= B <=> A = A * B
-		// A /= B <=> A = A / B
-		// A %= B <=> A = A % B
-		
-		int a1 = 10;
-		System.out.println(a1 += 20);
-		System.out.println(a1 -= 20);
-		System.out.println(a1 *= 20);
-		System.out.println(a1 /= 20);
-		System.out.println(a1 %= 20);
-		
 	}
 }
