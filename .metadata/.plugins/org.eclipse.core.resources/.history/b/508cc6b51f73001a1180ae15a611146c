@@ -1,0 +1,22 @@
+import java.util.logging.LogManager;
+
+public class Test02 {
+	public static void main(String[] args)
+	{
+		
+		//4. 증감연산자(단항연산자)
+		// ++A, A++, --A, A++
+		// -> 변수의 앞, 뒤에 붙어서 1증가, 1감소 연산
+		int A = 100;
+		System.out.println("A : " + A);
+		A++;
+		System.out.println("A : " + A);
+		++A;
+		System.out.println("A : " + A);
+		
+		A = 100;
+		System.out.println("A++ : " + (A++));
+		System.out.println("A : " + A);
+		System.out.println("++A : " + (++A));
+	}
+}

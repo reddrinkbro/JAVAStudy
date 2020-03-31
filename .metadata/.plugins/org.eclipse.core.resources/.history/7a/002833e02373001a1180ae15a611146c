@@ -112,8 +112,7 @@ public class Test02 {
 		System.out.println("F || F = " + (F||F));
 		
 		String name = null;
-		System.out.println((4<2) || name.length() ==4);
-		//System.out.println((4>2) && name.length() ==4);
-		//에러 발생
+		System.out.println((4>2) && name.length() ==4);
+		
 	}
 }

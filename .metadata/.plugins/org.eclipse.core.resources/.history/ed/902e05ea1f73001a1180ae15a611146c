@@ -86,34 +86,8 @@ public class Test02 {
 		//전위 연산자는 변수 A를 실행할 때 증가 / 감소
 		//후위 연산자는 변수 A를 사용하고 증가 / 감소
 		
-		System.out.println("--A : " + (--A));
-		System.out.println("--A : " + (--A));
+		System.out.println("A++ : " + (A));
+		System.out.println("++A : " + (--A));
 		System.out.println("A : " + A);
-		
-		//5. 논리연산자
-		// &&, ||, !
-		// => boolean 타입의 데이터를 사용한 연산
-		//<논리표>
-		// A	B	&&	||
-		// T	T	T	T
-		// T	F	F	T	
-		// F	T	F	T
-		// F	F 	F	F
-		boolean T = true;
-		boolean F = false;
-		System.out.println("T && T = " + (T&&T));
-		System.out.println("T && F = " + (T&&F));
-		System.out.println("F && T = " + (F&&T));
-		System.out.println("F && F = " + (F&&F));
-		
-		System.out.println("T || T = " + (T||T));
-		System.out.println("T || F = " + (T||F));
-		System.out.println("F || T = " + (F||T));
-		System.out.println("F || F = " + (F||F));
-		
-		String name = null;
-		System.out.println((4<2) || name.length() ==4);
-		//System.out.println((4>2) && name.length() ==4);
-		//에러 발생
 	}
 }
