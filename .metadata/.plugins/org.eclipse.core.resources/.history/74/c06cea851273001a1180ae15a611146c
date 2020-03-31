@@ -1,0 +1,14 @@
+
+public class Test02 {
+	public static void main(String[] args)
+	{
+		//연산자
+		
+		//1. 산술 연산자 (+,-,*,/,%)
+		System.out.println("10 + 20 =" + (10 + 20));
+		System.out.println("10 - 20 =" + (10 - 20));
+		System.out.println("10 * 20 =" + (10 * 20));
+		System.out.println("10 / 20 =" + (10 / 20));
+		System.out.println("10 % 20 =" + (10 % 20));
+	}
+}
