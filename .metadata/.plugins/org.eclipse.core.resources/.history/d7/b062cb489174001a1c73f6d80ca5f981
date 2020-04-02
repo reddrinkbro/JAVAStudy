@@ -79,7 +79,7 @@ public class Test1 {
 		
 		//입력된 변수의 값이 대문자이면 -> 소문자
 		// 소문자 라면 -> 그대로
-		ch = 'g';
+		ch = 'G';
 		char value = (('A' <= ch) && (ch <= 'Z'))? (char)(ch - 'A' + 'a') : (('a' <= ch) && (ch <= 'z')? (char)(ch - 'a' + 'A') : ch);
 		
 		System.out.println("ch : " + ch);
