@@ -1,0 +1,24 @@
+
+public class Test1 {
+	public static void main(String[] args)
+	{
+		//기본형 타입
+		/*byte - 1byte
+		short  - 2byte
+		int  - 4byte
+		long  - 8byte
+		float  - 4byte
+		double  - 8byte
+		char  - 2byte
+		boolean  - 2byte */
+		
+		byte a = 11;
+		byte b = 29;
+		byte c = (byte)(a + b);
+
+		//System.out.println("c : " + c);
+		
+		char ch = 64;
+		System.out.printf("%c", ch);
+	}
+}
