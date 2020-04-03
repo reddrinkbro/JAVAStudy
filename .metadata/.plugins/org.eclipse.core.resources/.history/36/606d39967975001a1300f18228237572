@@ -62,10 +62,11 @@ public class Test1 {
 		else if(score >= 60 && score <= 69) System.out.println("D");
 		else System.out.println("F");
 
+		System.out.println("Test");
 		//키보드 값 입력하기(스캐너)
-		scan.nextLine(); // 버퍼를 비워주면 밑에 스캐너가 동작한다
-		String input = scan.nextLine();
 		
+		String input = scan.nextLine();
+		System.out.println("Test");
 		System.out.println(input);
 		
 		
