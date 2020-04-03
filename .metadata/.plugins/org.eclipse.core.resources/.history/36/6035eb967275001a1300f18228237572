@@ -1,0 +1,46 @@
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		//분기문 if -> 하나의 조건이 만족할때 실행하는 코드
+		
+		//if - else문
+		/*if(조건문){
+			조건문의 결과가 참일때 실행
+		}else{
+			조건문의 결과가 참이 아닐때 실행
+		}*/
+		
+		// 정수형타입의 변수 생성후 123이라고 하는 리터럴값을 저장
+		// 변수의 값이 홀수/짝수 판별
+		int a = 123;
+		if(a % 2 == 1)
+		{
+			System.out.println("홀수 입니다");
+		}
+		else{
+			System.out.println("짝수 입니다");
+		}
+		
+		//절대값 계산
+		int num = -150;
+		if(num < 0){
+			num = -num; 
+		}
+		num = (num > 0)? num : -num ;
+		Math.abs(num);
+		System.out.println(num);
+		
+		//변수의 값이 정수인가를 판단
+		if (num > 0){
+			System.out.println("양수 입니다");
+		}
+		else if(num < 0){
+			System.out.println("음수 입니다");
+		}
+		else{
+			System.out.println("0 입니다");
+		}
+	}
+
+}
