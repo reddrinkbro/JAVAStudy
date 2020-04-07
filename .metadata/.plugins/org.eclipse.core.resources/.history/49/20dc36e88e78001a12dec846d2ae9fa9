@@ -1,0 +1,34 @@
+import java.util.*;
+public class Test1 {
+
+	public static void main(String[] args)
+	{
+		int i;
+		int j;
+		i = 20;
+		j = 30;	
+		System.out.println(i + j);
+		int key = 2;
+		switch (key) {
+			case 1:
+				System.out.println("옵션1");
+				break;
+			case 2:
+				System.out.println("옵션2");
+				break;
+			case 3:
+				System.out.println("옵션3");
+				break;
+			default:
+				System.out.println("옵션4");
+				break;
+		}
+		//두 정수의 합을 출력하는 코드를 작성
+		int a;
+		int b;
+		Scanner scan = new Scanner(System.in);
+		a = scan.nextInt();
+		b = scan.nextInt();
+		System.out.println("정수 " + a + " + 정수" + b +" = "+ a+b);
+	}
+}

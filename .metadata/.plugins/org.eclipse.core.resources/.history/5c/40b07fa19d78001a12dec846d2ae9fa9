@@ -1,0 +1,173 @@
+import java.util.*;
+public class Test1 {
+
+	public static void main(String[] args)
+	{
+		Scanner scan = new Scanner(System.in);
+		/*int i;
+		int j;
+		i = 20;
+		j = 30;	
+		System.out.println(i + j);
+		int key = 2;
+		switch (key) {
+			case 1:
+				System.out.println("옵션1");
+				break;
+			case 2:
+				System.out.println("옵션2");
+				break;
+			case 3:
+				System.out.println("옵션3");
+				break;
+			default:
+				System.out.println("옵션4");
+				break;
+		}*/
+		//두 정수의 합을 출력하는 코드를 작성
+	/*	int num1;
+		int num2;
+		Scanner scan = new Scanner(System.in);
+		num1 = scan.nextInt();
+		num2 = scan.nextInt();
+		System.out.println(num1 + " + " + num2 +" = "+ (int)(num1+num2));*/
+		
+		//직사각형 안의 점
+		
+/*		int numX;
+		int numY;
+		
+		numX = scan.nextInt();
+		numY = scan.nextInt();
+		if((numX>=50 && numX <=100) && (numY >=50 && numY <=100)){
+			System.out.println("사각형 내에 있다");
+		}
+		else{
+			System.out.println("사각형 밖에 있다");
+		}*/
+		
+		//키보드 입력을 통해서 참, 거짓의 값을 입력, 논리연산("and","or")
+		//논리 연산을 진행하려고 할때 해당 동작을 구현하시오
+		/*boolean b1 = scan.nextBoolean();
+		boolean b2 = scan.nextBoolean();
+		scan.nextLine();
+		String s = scan.nextLine();
+		
+		switch (s) {
+		case "and":
+		case "AND":
+			System.out.println(b1 && b2);
+			break;
+		case "or":
+		case "OR":
+			System.out.println(b1 || b2);
+			break;
+		default:
+			break;
+		}*/
+		//정수데이터(돈), 입력받은 돈을 각각의 단위로 바꿔서 출력
+		//5만원, 1만원, 5천원, 1천원, 500원, 100원, 10원, 1원
+		//65245원 (금액 변환 조건 : 항상 상위권종에 대해서 처리가 끝난후 다음으로 처리)
+		
+		int money = scan.nextInt();
+		/*if(money / 50000 > 0){
+			int m1 = money / 50000;
+			money -= m1 * 50000;
+			System.out.println(money);
+			if(money == 0)
+				System.out.println(m1);
+			else{
+				int m2 = money / 10000;
+				money -= m2 * 10000;
+				if(money == 0)
+					System.out.println(m1+ "+"+  m2);
+				else{
+					int m3 = money / 5000;
+					money -= m3 * 5000;
+					if(money == 0)
+						System.out.println(m1+ "/"+  m2 + "/" + m3);
+					else{
+						int m4 = money / 1000;
+						money -= m4 * 1000;
+						if(money == 0)
+							System.out.println(m1+ "/"+  m2 + "/" + m3 +"/"+m4);
+						else{
+							int m5 = money / 500;
+							money -= m5 * 500;
+							if(money == 0)
+								System.out.println(m1+ "/"+  m2 + "/" + m3 +"/"+m4 + "/"+m5);
+							else{
+								int m6 = money / 100;
+								money -= m6 * 100;
+								if(money == 0)
+									System.out.println(m1+ "/"+  m2 + "/" + m3 +"/"+m4 + "/"+m5 +"/"+m6);
+								else{
+									int m7 = money / 10;
+									money -= m7 * 10;
+									if(money == 0)
+										System.out.println(m1+ "/"+  m2 + "/" + m3 +"/"+m4 + "/"+m5 +"/"+m6+"/"+m7);
+									else{
+										System.out.println(m1+ "/"+  m2 + "/" + m3 +"/"+m4 + "/"+m5 +"/"+m6+"/"+m7 + "/" + money);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		else{
+			int m2 = money / 10000;
+			money -= m2 * 10000;
+			if(money == 0)
+				System.out.println(0+ "+"+  m2);
+			else{
+				int m3 = money / 5000;
+				money -= m3 * 5000;
+				if(money == 0)
+					System.out.println(0+ "/"+  m2 + "/" + m3);
+				else{
+					int m4 = money / 1000;
+					money -= m4 * 1000;
+					if(money == 0)
+						System.out.println(0+ "/"+  m2 + "/" + m3 +"/"+m4);
+					else{
+						int m5 = money / 500;
+						money -= m5 * 500;
+						if(money == 0)
+							System.out.println(0+ "/"+  m2 + "/" + m3 +"/"+m4 + "/"+m5);
+						else{
+							int m6 = money / 100;
+							money -= m6 * 100;
+							if(money == 0)
+								System.out.println(0+ "/"+  m2 + "/" + m3 +"/"+m4 + "/"+m5 +"/"+m6);
+							else{
+								int m7 = money / 10;
+								money -= m7 * 10;
+								if(money == 0)
+									System.out.println(0+ "/"+  m2 + "/" + m3 +"/"+m4 + "/"+m5 +"/"+m6+"/"+m7);
+								else{
+									System.out.println(0+ "/"+  m2 + "/" + m3 +"/"+m4 + "/"+m5 +"/"+m6+"/"+m7 + "/" + money);
+								}
+							}
+						}
+					}
+				}
+			}
+		}*/
+		int[] moneyArr = {50000,10000,5000,1000,500,100,10,1};
+		int[] num = new int[8];
+		for (int i = 0; i < moneyArr.length; i++) {
+			if(money / moneyArr[i] > 0){ 
+				num[i] = (int)(money / moneyArr[i]);
+				money -= (int)(money / moneyArr[i]) * moneyArr[i];
+			}
+				
+			else num[i] = 0;
+		}
+		for (int i = 0; i < num.length; i++) {
+			System.out.println(num[i]);
+		}
+		
+	}
+}
