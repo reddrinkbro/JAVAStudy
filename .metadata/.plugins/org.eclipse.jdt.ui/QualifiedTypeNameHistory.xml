@@ -2,7 +2,9 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.logging.LogManager"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="Test2"/>
 </qualifiedTypeNameHistroy>
