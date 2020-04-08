@@ -50,7 +50,59 @@ public class Test2 {
 		}
 		System.out.println(fact +" 팩토리얼 : " + result);*/
 		
+		//숙제 1
+		/*int input = scan.nextInt();
+		int ten = input / 10;
+		int one = input % 10;
+		if( input <1 || input >99){
+			System.out.println("잘못된 값이 입력되었습니다.");
+		}
+		else{
+			if(input >= 10){
+				if(ten % 3 == 0 && one % 3 == 0 && input >=10){
+					System.out.print("박수 짝짝 (" + input +")");
+				}
+				else if(ten % 3 == 0 || one % 3 == 0){
+						System.out.print("박수 짝 (" + input +")");
+				}
+				else{
+					System.out.print("박수 없음 (" + input +")");
+				}
+			}
+			else{
+				if(one % 3 == 0)
+					System.out.print("박수 짝 (" + input +")");
+				else{
+					System.out.print("박수 없음 (" + input +")");
+				}
+			}
+		}*/
+
+		//숙제 2
+		/*double input1 = scan.nextDouble();
+		String oper = scan.next();
+		double input2 = scan.nextDouble();
 		
+		switch (oper) {
+		case "+":
+			System.out.println(input1 + input2);
+			break;
+		case "-":
+			System.out.println(input1 - input2);
+			break;
+		case "*":
+			System.out.println(input1 * input2);
+			break;
+		case "/":
+			if(input2 != 0)
+				System.out.println(input1 / input2);
+			else
+				System.out.println("에러발생 : 0으로 나눌수 없습니다");
+			break;
+		default:
+			System.out.println("입력이 잘못되었습니다");
+			break;
+		}*/
 	}
 
 }
