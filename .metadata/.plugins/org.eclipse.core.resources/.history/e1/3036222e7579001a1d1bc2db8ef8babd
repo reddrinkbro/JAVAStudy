@@ -118,22 +118,8 @@ public class test2 {
 				System.out.println("i : "+ i +", j : " + j);
 			}
 		}
-		//레이블을 사용하여 원하는 위치의 반복문을 탈출
-		for (int i = 1; i < 11; i++) {
-			if(i%3 == 0)break;
-			System.out.println(i + " ");
-		}
-		System.out.println("\n========================================");
 		
-		exit_for:
-		for (int i = 1; i < 5; i++) {
-			for (int j = 1; j < 10; j++) {
-				if(j % 3 == 0) 
-					break exit_for;
-				System.out.println("i : "+ i +", j : " + j);
-			}
-		}
-		
+		//레이블
 		
 	}
 
