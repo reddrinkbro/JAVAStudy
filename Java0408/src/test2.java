@@ -1,4 +1,4 @@
-import java.util.Iterator;
+
 
 public class test2 {
 
@@ -22,16 +22,105 @@ public class test2 {
 			for(초기식;조건식;증감식){	
 			}
 		}*/
+		/*for (int i = 2; i <= 9; i++) {
+			System.out.println("구구단 " + i +"단 ");
+			for (int j = 1; j <= 9; j++) {
+				System.out.println(i + " x " + j + " = " + i * j);
+			}
+		}	*/
+		//별그리기
+		//1. 세로로 5개
 		
-		for (int i = 1; i <= 5; i++) {
-			for (int j = 1; j <= i - 1; j++) {
+		for (int i = 0; i < 5; i++) {
+			System.out.println("*");
+		}
+		//2. 가로로 5개
+		for (int i = 0; i < 5; i++) {
+			System.out.print("* ");
+		}
+		System.out.println("\n========================================");
+		//3. 5x5 별 그리기
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		System.out.println("\n========================================");
+		//4. 삼각형 만들기
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j <i; j++) {
+				if(i > j) System.out.print("*");
+			}
+			
+			System.out.println("*");
+		}
+		System.out.println("\n========================================");
+		//역삼각형
+		
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				if(i<=j)System.out.print("*");
+			}
+			System.out.println();
+		}
+		//90도 회전 삼각형
+		System.out.println("\n========================================");
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < i; j++) {
 				System.out.print(" ");
 			}
-			for (int j = 1; j <= 2 * (5 - i + 1) ; j++) {
+			for (int j = 0; j < 5 - i; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
+		int num = 1;
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j <i; j++) {
+				if(i > j) {
+					System.out.print(num + " ");
+					num++;
+				}
+			}
+			System.out.println(num + " ");
+			num++;
+		}
+		num = 1;
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				if(i<=j){
+					System.out.print(num + " ");
+					num++;
+				}
+			}
+			System.out.println();
+		}
+		/*long a = 1000000000l;
+		int b = 10;
+		while(b>0)
+		{
+			a--;
+			if(a<0){
+				System.out.println(b);
+				b--;
+				a = 1000000000l;
+			}
+		}*/
+		for (int i = 1; i < 11; i++) {
+			if(i%3 == 0)break;
+			System.out.println(i + " ");
+		}
+		System.out.println("\n========================================");
+		for (int i = 1; i < 5; i++) {
+			for (int j = 1; j < 10; j++) {
+				if(j % 3 == 0) break;
+				System.out.println("i : "+ i +", j : " + j);
+			}
+		}
+		
+		//레이블
+		
 	}
 
 }

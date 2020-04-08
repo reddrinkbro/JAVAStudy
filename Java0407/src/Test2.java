@@ -8,22 +8,6 @@ public class Test2 {
 		//for (초기식;조건식;증감식){
 				//반복할 문장
 		//}
-		for (int i = 1; i <= 10; i++) {
-			System.out.print(i + " ");
-		}
-		System.out.println("\n-------------------------------------");
-		for (int i = 1; i <= 10; i+=2) {
-			//System.out.print(i + " ");
-			//System.out.println((i++)+" ");
-			/*System.out.println(i+ " ");
-			i++;*/
-		}
-		for (int i = 1; i <= 10; i++) {
-			i++;
-			System.out.print(i + " ");
-			//System.out.print(++i + " ");
-		}
-		System.out.println("\n-------------------------------------");
 		/*for (int i = 10; i >= 1; i--) {
 			System.out.print(i + " ");
 		}
@@ -51,7 +35,7 @@ public class Test2 {
 		System.out.println(fact +" 팩토리얼 : " + result);*/
 		
 		//숙제 1
-		/*int input = scan.nextInt();
+		int input = scan.nextInt();
 		int ten = input / 10;
 		int one = input % 10;
 		if( input <1 || input >99){
@@ -76,7 +60,7 @@ public class Test2 {
 					System.out.print("박수 없음 (" + input +")");
 				}
 			}
-		}*/
+		}
 
 		//숙제 2
 		/*double input1 = scan.nextDouble();
