@@ -60,46 +60,11 @@ public class Test1 {
 			num2 = sum;
 		}
 		System.out.println("\n================================================");
-		for (int i = 0; i <= 10; i++) {
-			for (int j = 0; j <= i; j++) {
+		for (int i = 0; i < 10; i++) {
+			for (int j = 0; j < 10; j++) {
 				System.out.print(" * ");
 			}
 			System.out.println();
-		}
-		System.out.println("\n================================================");
-		int i1 = 0;
-		int j1 = 0;
-		while(i1 <= 10){
-			while(j1 <= i1){
-				System.out.print(" * ");
-				j1++;
-			}
-			System.out.println();
-			j1 = 0;
-			i1++;
-		}
-		System.out.println("\n================================================");
-		//다음 계산의 결과를 출력하시오
-		//1+(1+2)+(1+2+3)+(1+2+3+4)+...+(1+2+3+4+..+10)
-		int sum1 = 0;
-		int sum2 = 0;
-		for (int i = 1; i <= 10; i++) {
-			sum1 += i;
-			sum2 += sum1;
-		}
-		System.out.println(sum2);
-		System.out.println("\n================================================");
-		//1 + (-2) + 3 + (-4)
-		sum = 0;
-		for (int i = 1;;i++) {
-			if(i % 2 == 0){
-				sum -= i;
-			}
-			else sum += i;
-			if(sum == 100){
-				System.out.println("100은 " + i +"일때 된다");
-				break;
-			}
 		}
 		
 	}

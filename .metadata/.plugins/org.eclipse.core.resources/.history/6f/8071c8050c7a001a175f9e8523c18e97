@@ -93,9 +93,10 @@ public class Test1 {
 		sum = 0;
 		for (int i = 1;;i++) {
 			if(i % 2 == 0){
-				sum -= i;
+				sum += i * -1;
 			}
-			else sum += i;
+			sum += i;
+			System.out.println("sum : " + sum);
 			if(sum == 100){
 				System.out.println("100은 " + i +"일때 된다");
 				break;

@@ -88,20 +88,6 @@ public class Test1 {
 			sum2 += sum1;
 		}
 		System.out.println(sum2);
-		System.out.println("\n================================================");
-		//1 + (-2) + 3 + (-4)
-		sum = 0;
-		for (int i = 1;;i++) {
-			if(i % 2 == 0){
-				sum -= i;
-			}
-			else sum += i;
-			if(sum == 100){
-				System.out.println("100은 " + i +"일때 된다");
-				break;
-			}
-		}
-		
 	}
 
 }
