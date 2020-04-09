@@ -101,7 +101,15 @@ public class Test1 {
 				break;
 			}
 		}
+		System.out.println("\n================================================");
+		sum = 0;
+		num = 0;
+		int s = 1;
+		for (int i = 1; sum < 100; i++ ,s=-s) {
+			num = i * s;
+			sum += num;
+		}
 		
-	}
-
+	}	
+	
 }

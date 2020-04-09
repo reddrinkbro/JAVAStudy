@@ -1,0 +1,21 @@
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		//숫자 판독 프로그램 생성
+		String str = "12345";
+		char ch = ' ';
+		boolean isNumber = false;
+		for (int i = 0; i < str.length(); i++) {
+			isNumber = true;
+			if((str.charAt(i) >= 'a' && str.charAt(i) <= 'z')||(str.charAt(i) >= 'A' && str.charAt(i) <= 'Z')){
+				System.out.println("숫자가 아니다");
+				isNumber = false;
+				break;
+			}
+		}
+		if( isNumber) System.out.println("숫자 입니다");
+		
+	}
+
+}

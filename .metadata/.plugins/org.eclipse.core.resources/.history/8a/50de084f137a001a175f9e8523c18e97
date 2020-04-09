@@ -1,0 +1,12 @@
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		//숫자 판독 프로그램 생성
+		String str = "12g45";
+		char ch = ' ';
+		boolean isNumber = false;
+		System.out.println(str.contains("g"));
+	}
+
+}
