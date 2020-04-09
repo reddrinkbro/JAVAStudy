@@ -134,13 +134,7 @@ public class test2 {
 			}
 		}
 		
-		//무한루프 (무한 반복문)
-		/*for (;;) {	
-		}
-		for (;true;) {
-		}
-		while(true){}
-		do{}while(true);*/
+		
 	}
 
 }
