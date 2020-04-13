@@ -12,7 +12,7 @@ public class Test2 {
 		for (int i = 0; i < str.length(); i++) {
 			ch = str.charAt(i);
 			isNumber = true;
-			if(!(ch >= '0' && ch <= '9')){
+			if((ch >= 'a' && ch <= 'z')||(ch >= 'A' && ch <= 'Z')){
 				System.out.println("숫자가 아니다");
 				isNumber = false;
 				break;
