@@ -54,7 +54,6 @@ public class Test2 {
 		for (int i = 0; i < arr2.length; i++) {
 			System.out.println(arr2[i]);
 		}
-		System.out.println("\n----------------------------------------------");
 		// 학생의 점수 score 5개를 저장(정수형)
 		// 95, 70, 80, 75, 100
 		//이때 학생의 점수 총합, 평균
@@ -64,19 +63,7 @@ public class Test2 {
 		for (int i = 0; i < score.length; i++) {
 			sum += score[i];
 		}
-		aver = sum / (double)score.length;
-		System.out.println("합계 : " + sum + " 평균 " + aver);
-		
-		System.out.println("\n----------------------------------------------");
-		//실수형 데이터를 저장하는 배열 data를 생성한다
-		//9.5, 7.2, 69.6, 45.3, 103.7
-		double[] data = {9.5, 7.2, 69.6, 45.3, 103.7};
-		double top = data[0];
-		for (int i = 1; i < data.length; i++) {
-			if(top < data[i]) top = data[i];
-		}
-		System.out.println("가장 큰 값 : " + top);
-		
+		aver = sum / score.length; 
 	}
 	
 }
