@@ -1,0 +1,52 @@
+import java.util.*;
+
+import org.omg.CORBA.INTF_REPOS;
+public class Test1 {
+
+	public static void main(String[] args) {
+		String str = "12345";
+		int sum = 0;
+		for (int i = 0; i < str.length(); i++) {
+			sum += (int)(str.charAt(i) - '0');
+		}
+		System.out.println("1+2+3+4+5 = " + sum);
+		
+		System.out.println("\n----------------------------------");
+		sum = 0;
+		int num = 12345;
+		
+		for (int i = 0; i < 5; i++) {
+			sum += num % 10;
+			num /= 10;			
+		}
+		System.out.println("1+2+3+4+5 = " + sum);
+		
+		//글자의 숫자 제한 없이 구하는 방법
+		/*while(num > 0){
+			sum+=num%10;
+			num/=10;
+		}*/
+		
+		System.out.println("\n----------------------------------\n\n");
+		//숫자 찾기 게임
+		int num1 = (int)(Math.random() * 100 + 1);
+		Scanner scan = new Scanner(System.in);
+		System.out.println(num1);
+		
+		int count = 0;
+		while (true) {
+			int input = scan.nextInt();
+			count++;
+			if(num1 > input) System.out.println("오답입니다. 더 큰값을 입력하세요");
+			else if(num1 < input) System.out.println("오답입니다. 더 작은값을 입력하세요");
+			else{
+				System.out.println("정답입니다. 총 도전횟수 " + count +"회");
+				break;
+			}
+		}
+		
+	}
+	
+	
+
+}

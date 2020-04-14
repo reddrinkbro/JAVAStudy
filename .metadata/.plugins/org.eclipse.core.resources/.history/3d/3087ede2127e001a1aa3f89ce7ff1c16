@@ -1,0 +1,23 @@
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		String str = "12345";
+		int sum = 0;
+		for (int i = 0; i < str.length(); i++) {
+			sum += (int)(str.charAt(i) - '0');
+		}
+		System.out.println("1+2+3+4+5 = " + sum);
+		
+		System.out.println("\n----------------------------------");
+		sum = 0;
+		int num =12345;
+		for (int i = 0; i < 5; i++) {
+			num = num << 1;
+			System.out.println(num);
+			
+		}
+		System.out.println("1+2+3+4+5 = " + sum);
+	}
+
+}
