@@ -1,0 +1,49 @@
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		// 2차원 배열(다차원 배열) : 행렬표시 가능(표)
+		// 반복문의 개수 증가 : 이중 for문
+		// 1. new 연산자
+		// 2. 직접 초기화
+		
+		// 5 x 3 행렬 표현하기 위한 2차원 배열
+		int[][] arr = new int[5][3];
+		
+		arr[0][0] = 10; arr[0][1] = 50; arr[0][2] = 60;
+		arr[1][0] = 12; arr[1][1] = 42; arr[1][2] = 64;
+		arr[2][0] = 56; arr[2][1] = 35; arr[2][2] = 73;
+		arr[3][0] = 78; arr[3][1] = 16; arr[3][2] = 23;
+		arr[4][0] = 51; arr[4][1] = 48; arr[4][2] = 80;
+		
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.print("arr[" + i +"][" + j +"] = " + arr[i][j] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("\n------------------------------------------");
+		int[][] score = {
+			{85,60,70},
+			{90,95,80},
+			{75,80,100},
+			{80,70,95},
+			{100,65,80}
+		};
+		
+		for (int i = 0; i < score.length; i++) {
+			int sum1 = 0;
+			int sum2 = 0;
+			int a = 0 ;
+			for (int j = 0; j < score[i].length; j++) {
+				sum1 +=score[i][j];
+				sum2 +=score[i][a];
+				System.out.println(sum2);
+			}
+			a++;
+			System.out.println("학생 " + (i + 1) +" 총합 : "+ sum1);
+			
+		}
+	}
+
+}
