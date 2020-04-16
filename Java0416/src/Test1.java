@@ -42,6 +42,45 @@ public class Test1 {
 		for (int i = 0; i < sum2.length; i++) {
 			System.out.print(i + 1+"과목 점수 : " + sum2[i]+ " ");
 		}
+		
+		System.out.println("\n------------------------------------------");
+		/* 배열의 선언, 초기화 모습(o,x)
+		 1. int[] arr[]; (o)
+		 2. int[] arr = {1,2,4,}; (o) 데이터가 3개가 있음
+		 3. int[] arr = new int[5];(o)
+		 4. int[] arr = new int[4]{1,2,3,4};(x)
+		 4-1. int[] arr = new int[]{1,2,3,4};(o)
+		 5. int arr[5];(x)
+		 6. int[] arr[] = new int[3][]; (o)
+		 6-1. int[] arr[] = new int[][3]; (x) 행을 기준으로 데이터가 채워지는데 행의 기준이 없으면 안된다
+		 */
+		int[][] arr2 = {
+				{5,5,5,5},
+				{10,10,10,10},
+				{20,20,20,20},
+				{30,30,30,30}
+		};
+		int sum = 0;
+		int num = 0;
+		for (int i = 0; i < arr2.length; i++) {
+			for (int j = 0; j < arr2[i].length; j++) {
+				sum += arr2[i][j];
+				num++;
+			}
+		}
+		System.out.println("배열의 총 합 : " + sum + " 배열의 평균 : " + sum / (double)num);
+		System.out.println("\n------------------------------------------");
+		//int보다 크기가 작은 데이터타입의 경우 연산시 int(기본형) 변경후 연산
+		//데이터 크기가 큰쪽에 따라 연산이 처리됨
+		//int / double => double
+		
+		int[] arr4 = {10,20,30,40,50};
+		//합출력
+		sum = 0;
+		for (int i = 0; i < arr4.length; i++) {
+			sum += arr4[i];
+		}
+		System.out.println("총합 : " + sum);
 	}
 
 }

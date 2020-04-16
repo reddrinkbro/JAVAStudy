@@ -1,0 +1,30 @@
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		int[] stars={1,6,7,9,5,3,4,6,2,8};
+		
+		for (int i = 0; i < stars.length; i++) {
+			System.out.print(stars[i] + " ");
+			for (int j = 0; j < stars[i]; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		int[] num = new int[3];
+		for (int i = 0; i < num.length; i++) {
+			num[i] = (int)(Math.random() * 9) + 1;
+		}
+		int t = num[0];
+		for (int i = 1; i < num.length; i++) {
+			while(t == num[i]){
+				num[i] = (int)(Math.random() * 9) + 1;
+			}
+			t = num[i];
+		}
+		for (int i = 0; i < num.length; i++) {
+			System.out.print(num[i] + " ");
+			
+		}
+	}
+}

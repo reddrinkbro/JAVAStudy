@@ -1,0 +1,32 @@
+import java.util.*;
+public class Test3 {
+
+	public static void main(String[] args) {
+		//암호화 프로그램 작성
+		//
+		
+		//사용자 입력
+		Scanner scan = new Scanner(System.in);
+		String input = scan.nextLine();
+		
+		char[] charArr = new char[36];
+		char[] charArr1 = new char[36];
+		char a = 'A';
+		for (int i = 0; i < 26; i++) {
+			charArr[i] = a;
+			a++;
+		}
+		a = '0';
+		for (int i = 26; i < charArr.length; i++) {
+			charArr[i] = a;
+			a++;
+		}
+		for (int i = 0; i < charArr.length; i++) {
+			System.out.print(charArr[i] + " ");
+		}
+		//암호화 처리
+		
+		//암호화 결과 출력
+	}
+
+}
