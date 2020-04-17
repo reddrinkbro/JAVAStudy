@@ -1,0 +1,80 @@
+
+
+public class Test2 {
+	//변수 선언
+	
+	public static void hello() {
+		System.out.println("안녕하세요 홍길동 입니다.");
+	}
+	public static void sumNumber(int num){
+		int sum = 0;
+		for (int i = 1; i <= num; i++) {
+			sum+=i;
+		}
+		System.out.println(sum);
+	}
+	public static void inputNumber(int num){
+		System.out.println("입력값 : " + num);
+	}
+	public static void chNumber1(int num){
+		if(num > 0) System.out.println("양수");
+		else if(num < 0) System.out.println("음수");
+		else System.out.println("0");
+	}
+	public static void chNumber2(int num){
+		if(num % 2 == 1) System.out.println("홀수");
+		else System.out.println("짝수");
+	}
+	public static void absNumber(int num){
+		if(num < 0) num = -num;
+		System.out.println(num);
+	}
+	public static double APlusB(double a, double b){
+		return a + b;
+	}
+	public static void myInfo(String name, int num, int ipnum)
+	{
+		System.out.println(name + "님은 "+ num + "강의장에 x.x.x." +ipnum +"번 자리에 있습니다.");	
+	}
+	public static void main(String[] args) {
+		// "안녕하세요 홍길동입니다"
+		//출력하는 메서드 생성
+		//public static
+		//리턴 타입 x, 전달인자 x => 메서드 출력
+		hello();
+		System.out.println("------------------------------------------------");
+		//public static, 리턴타입 x, 정수형 타입의 데이터 1개를 필요로 하는 메서드
+		//inputNumber() => 전달한 숫자 출력해주는 메서드 "입력값 : 00"
+		inputNumber(123);
+		//public static, 리턴타입 x, 정수형 타입의 데이터 1개를 필요로 하는 메서드
+		// chNumber1(): 전달 받은 값이 양수/음수 판별 
+		// chNumber2(): 전달 받은 값이 홀수 / 짝수 판별
+		chNumber1(-123);
+		chNumber2(12);
+		//public static, 리턴타입 x, 정수형 타입의 데이터 1개를 필요로 하는 메서드
+		//sumNumber 1~전달한 숫자까지의 합
+		sumNumber(10000);
+		//public static, 리턴타입 x, 정수형 타입의 데이터 1개를 필요로 하는 메서드
+		//absNumber 해당입력받은 숫자의 절대값을 출력
+		absNumber(114);
+		//public static, 리턴 : 연산의 결과 , 실수형 타입의 데이터 2개를 입력해서
+		//두개의 변수 합을 출력하는 메서드 APlusB() -> 출력
+		System.out.println(APlusB(15.34,13.567));
+		//public static, 리턴타입 x , 데이터 3개를 입력해서
+		// MyInfo(), 사용자의 이름, 강의장 번호, 자신의 위치
+		myInfo("홍길동",6,20);
+		//public static, 리턴 : 각각 연산의 결과를 리턴 , 데이터 3개를 입력해서
+		//sumSubject 과목 점수 3개의 합을 리턴하는 메서드 생성
+		//avgSubject 과목 점수 3개의 평균을 리턴하는 메서드 생성
+		System.out.println("3과목의 합 :"+ sumSubject(100,50,68));
+		System.out.println("3과목의 평균:" + avgSubject(100,50,68));
+	}
+	public static int sumSubject(int subject1, int subject2, int subject3){
+		return subject1 + subject2 + subject3;
+	}
+	
+	public static double avgSubject(int subject1, int subject2, int subject3){
+		return (float)(subject1 + subject2 + subject3)/3;
+	}
+
+}

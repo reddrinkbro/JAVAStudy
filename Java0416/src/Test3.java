@@ -7,7 +7,7 @@ public class Test3 {
 		
 		//사용자 입력
 		Scanner scan = new Scanner(System.in);
-		String input = "ABDCDS"/*scan.nextLine()*/;
+		String input = scan.nextLine();
 		
 		char[] charArr = new char[36];
 		char[] charArr1 = {

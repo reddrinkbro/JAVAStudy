@@ -1,0 +1,27 @@
+
+public class Test1 {
+	
+	//메서드 선언
+	public static void hello_itwill(){
+		//void : 메서드의 리턴값이 없음
+		//특정 작업의 처리 동작만 구현함
+		System.out.println("hello");
+	}
+
+	public static void main(String[] args) {
+		//메서드 : 특정 동작을 한번에 여러개 구현하기 위한 방법
+		//객체 지향 : 메서드, 절차지향 : 함수
+		//main 메서드 : 프로그램을 실행시키는 메서드
+		//모듈화 프로그래밍
+		/*
+		 [접근지정자][리턴타입][메서드명](전달인자1,...) // 매서드머리
+		 { 
+		  	실행동작;
+		  	변수선언;
+		 	return 값;
+		 }
+		 */
+		hello_itwill();
+	}
+
+}
