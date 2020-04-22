@@ -1,0 +1,19 @@
+//자동차 클래스 -> 자동차 객체
+class Car{
+	//자동차 클래스
+	String name;
+	public void sound(){
+		System.out.println("부릉부릉");
+	}
+}
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		Car bus = new Car();
+		bus.name = "버스";
+		System.out.println(bus.name);
+		bus.sound();
+	}
+
+}

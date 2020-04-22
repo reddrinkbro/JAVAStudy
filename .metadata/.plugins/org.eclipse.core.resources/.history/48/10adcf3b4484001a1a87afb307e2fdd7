@@ -1,0 +1,33 @@
+//학생 객체를 생성한다
+//이름, 나이 정보를 저장하고 있다
+//공부하기, 놀기 동작을 할 수 있다 
+class Student{
+	String name;
+	int age;
+	public void study(){
+		System.out.println("공부하기");
+	}
+	public void play(){
+		System.out.println("놀기");
+	}
+}
+
+//자동차 클래스 -> 자동차 객체
+class Car {
+	//자동차 클래스
+	
+}
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		//클래스는 대부분 선언후 인스턴스화(메모리에 올리는 작업) 해서 사용해야함
+		//객체 생성은 main()메서드에서 실행
+		Student kim = new Student();
+		kim.name = "김학생";
+		kim.age = 20;
+		
+		System.out.println("이름 : " + kim.name + "\n 나이 : " + kim.age);
+	}
+
+}
