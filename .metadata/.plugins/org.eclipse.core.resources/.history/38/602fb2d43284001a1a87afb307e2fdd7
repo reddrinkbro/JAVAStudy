@@ -1,0 +1,36 @@
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		System.out.println(isNumber("0123"));
+		System.out.println("\n=================================");
+		int[] a = new int[5];
+		System.out.println(max(a));
+	}
+	// 메서드  명 : isNumber
+	// public static 사용
+	// 전달인자 : String, 리턴 : boolean
+	//문자열 값이 숫자인지 아닌지 판별하는 메서드
+	//문자열이 null이거나 빈문자열이면 false값 리턴
+	public static boolean isNumber(String s){
+		if(s == null || s.length() == 0) return false;
+		for (int i = 0; i < s.length(); i++) {
+			char tmp = s.charAt(i);
+			if('0' > tmp || tmp >'9') return false;
+		}
+		return true;
+	}
+	// 메서드  명 : max
+	// public static 사용
+	// 전달인자 : int[], 리턴 : int
+	//5개 이상의 int 타입의 값을 가진 배열중에서 가장 큰값을 찾아서 출력
+	//만약 배열이 null이거나 배열의 크기가 0일때 -99999리턴
+	public static int max(int[] a){
+		if(a == null || a.length ==0) return -99999;
+		int max = a[0];
+		for (int i = 1; i < a.length; i++) {
+			if(max < a[i]) max = a[i];
+		}
+		return max;
+	}
+}
